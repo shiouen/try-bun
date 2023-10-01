@@ -12,7 +12,6 @@ async function main() {
     app.use(router.allowedMethods());
 
     app.listen(3000, () => {
-        console.log(router.stack.map(i => i.path));
         console.log("server started");
     });
 }
